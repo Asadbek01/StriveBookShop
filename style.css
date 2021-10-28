@@ -1,7 +1,41 @@
-body{
 
-}
 .navbar-brand{
  font-size: 30;
  padding-right: 25rem;
 }
+.card-img{
+    width:200px;
+    height: 100px;
+    object-fit: cover;
+}
+.selected{
+    border: 3px solid green;
+}
+.shoppingCart i{
+ 
+        transform: translateY(-50%);
+        min-width: 50px;
+        min-height: 50px;
+        max-width: 50px;
+        max-height: 50px;
+        z-index: 1;
+        transition: all 0.4s;
+      }
+
+      .shoppingCart i > div {
+        opacity: 0;
+        transition: all 0.4s;
+        padding: 4em;
+        display: none;
+      }
+     .shoppingCart:hover > div {
+        opacity: 1;
+        display: block;
+      }
+
+      .shoppingCart:hover {
+        max-width: unset;
+        max-height: 70vh;
+        overflow-y: scroll;
+      }
+
